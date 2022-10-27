@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
 
         static void Equation(float a,float b, float c){
@@ -20,7 +21,15 @@ public class Main {
 
         }
         public static void main(String arg[]) {
-            Equation(2,4,1);
+            Scanner values= new Scanner(System.in);
+            System.out.println("Enter value a:");
+
+            float value_a=values.nextFloat();
+            System.out.println("Enter value b:");
+            float value_b=values.nextFloat();
+            System.out.println("Enter value c:");
+            float value_c=values.nextFloat();
+            Equation(value_a,value_b,value_c);
 
         }
 }
